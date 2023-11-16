@@ -16,6 +16,46 @@ export const NAVBAR_ITEMS = [
     path: "/pricing",
   },
 ];
+export const FOOTER_ITEMS = [
+  {
+    name: "Home",
+    path: "/",
+  },
+  {
+    name: "About Us",
+    path: "/about-us",
+  },
+  {
+    name: "Features",
+    path: "/features",
+  },
+  {
+    name: "Pricing",
+    path: "/pricing",
+  },
+  {
+    name: "Contact Us",
+    path: "/contact-us",
+  },
+];
+
+export const FOOTER_SOCIAL_ITEMS = [
+  {
+    name: "X",
+    img: "/assets/x.svg",
+    link: "",
+  },
+  {
+    name: "linkedin",
+    img: "/assets/linkedin.svg",
+    link: "",
+  },
+  {
+    name: "facebook",
+    img: "/assets/fb.svg",
+    link: "",
+  },
+];
 
 export const PRICING_CARDS = [
   {

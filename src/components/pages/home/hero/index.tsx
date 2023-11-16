@@ -12,7 +12,8 @@ const Hero = () => {
           Supporting Daycare Providers
         </h1>
         <p className="text-3xl font-medium mt-7">
-          Because Your Passion Dosent <span className="block">Clock Out</span>
+          Because Your Passion Dose&apos;nt
+          <span className="block">Clock Out</span>
         </p>
         <div className="relative mt-9">
           <Image
