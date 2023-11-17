@@ -6,6 +6,9 @@ import {
   Highlight,
   Pricing,
 } from "@/components/pages/home";
+import Available from "@/components/pages/home/available";
+import Downlaod from "@/components/pages/home/download";
+import Reviews from "@/components/pages/home/reviews";
 
 export default function Home() {
   return (
@@ -17,6 +20,9 @@ export default function Home() {
       <Highlight />
       <DedicatedApps />
       <Pricing className="text-center py-48 text-[#000B33]" />
+      <Downlaod />
+      <Reviews />
+      <Available />
     </main>
   );
 }

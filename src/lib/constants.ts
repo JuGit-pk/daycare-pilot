@@ -146,3 +146,69 @@ export const FEATURES = [
       "Send payment receipts directly from your phone. No fuss, just a few taps.",
   },
 ];
+
+export const CUSTOMERS_REVIEWS = [
+  {
+    avatar: "",
+    name: "Russell Gray",
+    description: "Dad of four girls",
+    review:
+      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
+  },
+  {
+    avatar: "",
+    name: "Janice Meyer",
+    description: "Mom of 2 boys",
+    review:
+      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
+  },
+  {
+    avatar: "",
+    name: "Annette Black",
+    description: "Mom of 2 boys",
+    review:
+      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
+  },
+  {
+    avatar: "",
+    name: "Russell Gray",
+    description: "Dad of four girls",
+    review:
+      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
+  },
+  {
+    avatar: "",
+    name: "Janice Meyer",
+    description: "Mom of 2 boys",
+    review:
+      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
+  },
+  {
+    avatar: "",
+    name: "Annette Black",
+    description: "Mom of 2 boys",
+    review:
+      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
+  },
+  {
+    avatar: "",
+    name: "Russell Gray",
+    description: "Dad of four girls",
+    review:
+      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
+  },
+  {
+    avatar: "",
+    name: "Janice Meyer",
+    description: "Mom of 2 boys",
+    review:
+      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
+  },
+  {
+    avatar: "",
+    name: "Annette Black",
+    description: "Mom of 2 boys",
+    review:
+      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
+  },
+];

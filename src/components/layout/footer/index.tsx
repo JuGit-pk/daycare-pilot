@@ -16,8 +16,8 @@ const Footer = () => {
             height={133}
           />
         </div>
-        <div className="pt-6 flex flex-col justify-between">
-          <ul className="space-x-16 font-extrabold text-[22px] flex items-center justify-center text-[#25314C]">
+        <div className="pt-6 flex flex-col justify-between ml-28">
+          <ul className="space-x-16 font-extrabold text-[22px]  flex items-center justify-center text-[#25314C]">
             {FOOTER_ITEMS.map(({ name, path }, i) => (
               <li key={path + i} className="inline-block">
                 <Link
@@ -29,20 +29,20 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-          <p className="mx-auto mt-14 text-[#25314C] text-base font-sans">
+          <p className="mx-auto mt-14 text-[#25314C] text-base 2xl:text-lg font-sans">
             Copyright to SIPPY CUP SOFTWARE INC.
           </p>
         </div>
         <div className="pt-6 flex flex-col">
-          <div className="space-x-5 ml-auto">
+          <div className="space-x-6 ml-auto">
             {/* icons */}
             {FOOTER_SOCIAL_ITEMS.map(({ name, img, link }, i) => (
               <Link href={link} key={name + i} className="inline-block">
-                <Image src={img} alt={name} width={24} height={24} />
+                <Image src={img} alt={name} width={27} height={27} />
               </Link>
             ))}
           </div>
-          <div className="mt-14 space-x-10 text-base text-[#25314C] font-sans">
+          <div className="mt-14 space-x-10 text-base 2xl:text-lg text-[#25314C] font-sans">
             <Link href="#">Privacy Policy</Link>
             <Link href="#">Terms & Conditions</Link>
           </div>
