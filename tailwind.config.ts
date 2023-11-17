@@ -71,7 +71,7 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       boxShadow: {
-        pricing: "-20px 10px 60px 0px #0000001A",
+        pricing: "-20px 10px 60px 0px #0000000D",
         logo: "0px 4.48px 15.67px 0px #0000001A",
       },
     },
