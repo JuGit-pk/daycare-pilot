@@ -10,7 +10,7 @@ const Footer = () => {
       <Container className="flex justify-between items-start">
         <div>
           <Image
-            src="/assets/logo2.png"
+            src="/assets/daycarepilot2.png"
             alt="footer logo"
             width={178}
             height={133}
@@ -43,8 +43,8 @@ const Footer = () => {
             ))}
           </div>
           <div className="mt-14 space-x-10 text-base 2xl:text-lg text-[#25314C] font-sans">
-            <Link href="#">Privacy Policy</Link>
-            <Link href="#">Terms & Conditions</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/terms-and-conditions">Terms & Conditions</Link>
           </div>
         </div>
       </Container>

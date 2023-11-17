@@ -1,28 +1,12 @@
-import Container from "@/components/layout/container";
 import Image from "next/image";
-import React from "react";
+
+import Container from "@/components/layout/container";
+import WavyWrapper from "@/components/layout/wavy-wrapper";
 
 const Downlaod = () => {
   return (
-    <section className="bg-[#FF6600] relative py-32">
-      {/* pattern */}
-      {/* top */}
-      <Image
-        src="/assets/zag-top.svg"
-        width={5000}
-        height={5000}
-        alt="bg"
-        className="absolute -top-1 left-0"
-      />
-      {/* bottom */}
-      <Image
-        src="/assets/zag-bottom.svg"
-        width={5000}
-        height={5000}
-        alt="bg"
-        className="absolute -bottom-1 left-0"
-      />
-      <Container className="grid grid-cols-2 gap-x-36 text-white relative">
+    <WavyWrapper>
+      <Container className="grid grid-cols-2 gap-x-36 text-white">
         <div className="relative">
           <Image
             className="absolute -translate-y-56 right-0 z-20"
@@ -60,7 +44,7 @@ const Downlaod = () => {
           </div>
         </div>
       </Container>
-    </section>
+    </WavyWrapper>
   );
 };
 

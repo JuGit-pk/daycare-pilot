@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 
-const Hero = () => {
+const CTA = () => {
   return (
     <section className="grid grid-cols-12 text-background">
       <div className="col-span-6">
@@ -53,4 +53,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default CTA;

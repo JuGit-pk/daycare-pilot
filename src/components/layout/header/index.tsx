@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import Navbar from "../navbar";
 import { cn } from "@/lib/utils";
 import Container from "../container";
@@ -17,7 +18,7 @@ const Header = ({ children, className, isBear = true }: IProps) => {
     >
       <Container className="px-36 relative">
         <Navbar className="mb-[88px]" />
-        {/* relaaavent position vector image */}
+        {/* relaavent position vector image */}
         <Image
           src="/assets/rocket.svg"
           className="absolute top-28 right-16 z-10 h-32"
@@ -28,7 +29,7 @@ const Header = ({ children, className, isBear = true }: IProps) => {
         {isBear && (
           <Image
             src="/assets/bear.svg"
-            className="absolute top-60 left-10 z-10 h-32"
+            className="absolute top-72 2xl:top-60 left-10 z-10 h-32"
             alt="bear"
             width={150}
             height={300}
@@ -37,7 +38,7 @@ const Header = ({ children, className, isBear = true }: IProps) => {
         {children}
       </Container>
       {/* clouds */}
-      <div className="absolute inset-x-0 -bottom-1 2xl:bottom-0">
+      <div className="absolute inset-x-0 -bottom-5">
         <svg
           width="100%"
           height="100%"

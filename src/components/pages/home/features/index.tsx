@@ -8,7 +8,9 @@ interface IProps {
 
 const Features: React.FC<IProps> = ({ className }) => {
   return (
-    <section className={`text-[#000B33] ${className} py-36`}>
+    <section
+      className={`text-[#000B33] ${className} py-36 px-[152px] text-center`}
+    >
       <Container className="text-center">
         <h2 className="text-5xl font-bold">
           Simplify Childcare Management on Your Phone

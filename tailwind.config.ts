@@ -73,6 +73,7 @@ module.exports = {
       boxShadow: {
         pricing: "-20px 10px 60px 0px #0000000D",
         logo: "0px 4.48px 15.67px 0px #0000001A",
+        accordion: "0px 4px 40px 0px #2B59FF14",
       },
     },
   },

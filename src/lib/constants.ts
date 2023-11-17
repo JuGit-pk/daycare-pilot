@@ -212,3 +212,148 @@ export const CUSTOMERS_REVIEWS = [
       "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
   },
 ];
+
+export const PRIVACY_POLICY = [
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+];
+
+export const TERMS_AND_POLICY_LIST = [
+  {
+    name: "Terms of Use",
+    slug: "terms-of-use",
+    content: [
+      {
+        title: "Terms of Use",
+        description:
+          "An enim nullam tempor sapien gravida donec enim ipsum porta justo congue purus pretium ligula",
+      },
+      {
+        title: "Terms of Use",
+        description:
+          "An enim nullam tempor sapien gravida donec enim ipsum porta justo congue purus pretium ligula",
+      },
+      {
+        title: "Terms of Use",
+        description:
+          "An enim nullam tempor sapien gravida donec enim ipsum porta justo congue purus pretium ligula",
+      },
+    ],
+  },
+  {
+    name: "Privacy Policy",
+    slug: "privacy-policy",
+    content: [
+      {
+        title: "Privacy Policy",
+        description:
+          "An enim nullam tempor sapien gravida donec enim ipsum porta justo congue purus pretium ligula",
+      },
+      {
+        title: "Privacy Policy",
+        description:
+          "An enim nullam tempor sapien gravida donec enim ipsum porta justo congue purus pretium ligula",
+      },
+      {
+        title: "Privacy Policy",
+        description:
+          "An enim nullam tempor sapien gravida donec enim ipsum porta justo congue purus pretium ligula",
+      },
+    ],
+  },
+  {
+    name: "Cookie Policy",
+    slug: "cookie-policy",
+    content: [
+      {
+        title: "Cookie Policy",
+        description:
+          "An enim nullam tempor sapien gravida donec enim ipsum porta justo congue purus pretium ligula",
+      },
+      {
+        title: "Cookie Policy",
+        description:
+          "An enim nullam tempor sapien gravida donec enim ipsum porta justo congue purus pretium ligula",
+      },
+      {
+        title: "Cookie Policy",
+        description:
+          "An enim nullam tempor sapien gravida donec enim ipsum porta justo congue purus pretium ligula",
+      },
+    ],
+  },
+];
+
+export const FAQ_LIST = [
+  {
+    name: "Getting Started",
+    slug: "getting-started",
+    content: [
+      {
+        title: "Introduction",
+        description:
+          "Learn about the basics of our application and how to get started.",
+      },
+      {
+        title: "Installation",
+        description:
+          "Follow these steps to install our application on your device.",
+      },
+      {
+        title: "System Requirements",
+        description:
+          "Check the system requirements before installing the application.",
+      },
+    ],
+  },
+  {
+    name: "Features",
+    slug: "features",
+    content: [
+      {
+        title: "Feature 1",
+        description: "Explore the functionality of Feature 1 in detail.",
+      },
+      {
+        title: "Feature 2",
+        description: "Discover what Feature 2 has to offer.",
+      },
+      {
+        title: "Feature 3",
+        description: "Learn how to make the most of Feature 3.",
+      },
+    ],
+  },
+  {
+    name: "Troubleshooting",
+    slug: "troubleshooting",
+    content: [
+      {
+        title: "Common Issues",
+        description: "Find solutions to common problems encountered by users.",
+      },
+      {
+        title: "Error Codes",
+        description:
+          "Understand the meaning of error codes and how to fix them.",
+      },
+    ],
+  },
+];
+
+export const DEDICATED_APPS = [
+  {
+    title: "Parent App",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    type: "parent",
+  },
+  {
+    title: "Teacher App",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    type: "teacher",
+  },
+];

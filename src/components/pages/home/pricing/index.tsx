@@ -7,7 +7,7 @@ interface IProps {
 }
 const Pricings = ({ className }: IProps) => {
   return (
-    <section className={`${className}`}>
+    <section className={`${className} text-center py-48 text-[#000B33]`}>
       <Container className="space-y-5">
         <p className="text-[#00BB98] text-xl font-semibold">Pricing Plan</p>
         <h3 className="font-bold text-5xl">
