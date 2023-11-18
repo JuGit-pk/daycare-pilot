@@ -1,26 +1,24 @@
 import Image from "next/image";
 
 import Container from "@/components/layout/container";
-import { FEATURES } from "@/lib/constants";
+import { PageFeature } from "@/types";
+import { cn } from "@/lib/utils";
 interface IProps {
   className?: string;
+  features: PageFeature;
 }
 
-const Features: React.FC<IProps> = ({ className }) => {
+const Features: React.FC<IProps> = ({ className, features: feat }) => {
+  const { description, features, title } = feat;
   return (
     <section
-      className={`text-[#000B33] ${className} py-36 px-[152px] text-center`}
+      className={cn(`text-[#000B33] py-36 px-[152px] text-center`, className)}
     >
       <Container className="text-center">
-        <h2 className="text-5xl font-bold">
-          Simplify Childcare Management on Your Phone
-        </h2>
-        <p className="text-2xl mt-7 opacity-70">
-          Running a daycare? Our software is designed with you in mind. Heres
-          how we make it easy.
-        </p>
+        <h2 className="text-5xl font-bold">{title}</h2>
+        <p className="text-2xl mt-7 opacity-80">{description}</p>
         <div className="grid grid-cols-4 gap-x-10 gap-y-24 mt-20">
-          {FEATURES.map(({ description, title, image }) => (
+          {features.map(({ description, title, image }) => (
             <div key={description} className="text-left max-w-[269px]">
               <Image
                 src={image}

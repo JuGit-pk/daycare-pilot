@@ -5,7 +5,7 @@ import WavyWrapper from "@/components/layout/wavy-wrapper";
 
 const Downlaod = () => {
   return (
-    <WavyWrapper>
+    <WavyWrapper className="text-left">
       <Container className="grid grid-cols-2 gap-x-36 text-white">
         <div className="relative">
           <Image

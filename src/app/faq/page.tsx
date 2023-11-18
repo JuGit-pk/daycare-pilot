@@ -1,5 +1,5 @@
 import Hero from "@/components/layout/hero";
-import QuickNavigation from "@/components/misc/quick-navigation";
+import QuickNavigation from "@/components/common/quick-navigation";
 import { Available } from "@/components/pages/home";
 import { FAQ_LIST } from "@/lib/constants";
 

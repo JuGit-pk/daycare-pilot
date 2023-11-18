@@ -1,14 +1,15 @@
+import Pricing from "@/components/common/pricing";
 import Header from "@/components/layout/header";
 import {
   CTA,
   DedicatedApps,
   Features,
   Highlight,
-  Pricing,
   Downlaod,
   Reviews,
   Available,
 } from "@/components/pages/home";
+import { HOME_PAGE_FEATURES } from "@/lib/constants";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <Header isBear={false}>
         <CTA />
       </Header>
-      <Features />
+      <Features features={HOME_PAGE_FEATURES} />
       <Highlight />
       <DedicatedApps />
       <Pricing />
