@@ -11,7 +11,11 @@ const ServicesPage = () => {
         description="An enim nullam tempor sapien gravida donec enim ipsum porta justo congue purus pretium ligula"
         page="Services"
       />
-      <Features features={SERVICES_PAGE_FEATURES} className="pt-5" />
+      <Features
+        features={SERVICES_PAGE_FEATURES}
+        isAdditionalVectors
+        className="pt-5"
+      />
       <Pricing isInverted />
       <Reviews />
     </main>

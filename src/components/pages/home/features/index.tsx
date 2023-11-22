@@ -6,14 +6,31 @@ import { cn } from "@/lib/utils";
 interface IProps {
   className?: string;
   features: PageFeature;
+  isAdditionalVectors?: boolean;
 }
 
-const Features: React.FC<IProps> = ({ className, features: feat }) => {
+const Features: React.FC<IProps> = ({
+  className,
+  features: feat,
+  isAdditionalVectors,
+}) => {
   const { description, features, title } = feat;
   return (
     <section
-      className={cn(`text-[#000B33] py-36 px-[152px] text-center`, className)}
+      className={cn(
+        `text-[#000B33] py-36 px-[152px] text-center relative`,
+        className
+      )}
     >
+      {isAdditionalVectors && (
+        <Image
+          src="/assets/dots.svg"
+          width={70}
+          height={180}
+          alt="bg"
+          className="absolute top-12 right-3"
+        />
+      )}
       <Container className="text-center">
         <h2 className="text-5xl font-bold">{title}</h2>
         <p className="text-2xl mt-7 opacity-80">{description}</p>
