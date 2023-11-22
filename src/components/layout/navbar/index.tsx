@@ -27,12 +27,14 @@ const Navbar: React.FC<IProps> = ({ className }) => {
       </ul>
       {/* logo */}
       <div className="absolute z-10 shadow-logo left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-background w-64 h-48 rounded-[32px] py-4 px-5">
-        <Image
-          src="/assets/daycarepilot.png"
-          alt="logo"
-          width={1500}
-          height={1500}
-        />
+        <Link href="/">
+          <Image
+            src="/assets/daycarepilot.png"
+            alt="logo"
+            width={1500}
+            height={1500}
+          />
+        </Link>
       </div>
       <Button
         size="lg"

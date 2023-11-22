@@ -1,9 +1,9 @@
 import Pricing from "@/components/common/pricing";
 import Hero from "@/components/layout/hero";
 import { Features, Reviews } from "@/components/pages/home";
-import { SERVICES_PAGE_FEATURES } from "@/lib/constants";
+import { SERVICE_TEACHER_PAGE_FEATURES } from "@/lib/constants";
 
-const ServicesPage = () => {
+const TeacherServicesPage = () => {
   return (
     <main className="min-h-screen">
       <Hero
@@ -12,7 +12,7 @@ const ServicesPage = () => {
         page="Services"
       />
       <Features
-        features={SERVICES_PAGE_FEATURES}
+        features={SERVICE_TEACHER_PAGE_FEATURES}
         isAdditionalVectors
         className="pt-5"
       />
@@ -22,4 +22,4 @@ const ServicesPage = () => {
   );
 };
 
-export default ServicesPage;
+export default TeacherServicesPage;

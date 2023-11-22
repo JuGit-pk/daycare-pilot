@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -65,7 +66,9 @@ const Card = ({ title, description, type }: IAppCardProps) => {
           </svg>
         )}
         <div className="max-w-[492px]">
-          <h3 className="text-xl font-bold py-6">{title}</h3>
+          <h3 className="text-xl font-bold py-6">
+            <Link href={`/services/${type}`}>{title}</Link>
+          </h3>
           <p className="leading-8">{description}</p>
         </div>
         <Button

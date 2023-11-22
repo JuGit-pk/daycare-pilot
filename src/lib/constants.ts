@@ -97,7 +97,7 @@ export const PRICING_CARDS = [
     ],
   },
 ];
-
+// FEATURES
 export const HOME_PAGE_FEATURES = {
   title: "Simplify Childcare Management on Your Phone",
   description:
@@ -153,7 +153,7 @@ export const HOME_PAGE_FEATURES = {
     },
   ],
 };
-export const SERVICES_PAGE_FEATURES = {
+export const SERVICES_PARENT_PAGE_FEATURES = {
   title: "Parent App Features",
   description:
     "Running a daycare? Our software is designed with you in mind. Here's how we make it easy.",
@@ -181,6 +181,61 @@ export const SERVICES_PAGE_FEATURES = {
       title: "Real-Time Messaging",
       description:
         "Anytime Stay connected with parents through real-time messaging. Group chats, direct messages, and notifications - all at your fingertips.",
+    },
+  ],
+};
+export const SERVICE_TEACHER_PAGE_FEATURES = {
+  title: "Simplify Childcare Management on Your Phone",
+  description:
+    "Running a daycare? Our software is designed with you in mind. Here's how we make it easy.",
+  features: [
+    {
+      image: "/assets/check-in.png",
+      title: "Intuitive Check-In/Check-Out",
+      description:
+        "Effortlessly manage child attendance right from your phone. Parents request check-in/check-out, and you confirm with a tap.",
+    },
+    {
+      image: "/assets/seo-report.png",
+      title: "Daily Reports, No Hassle",
+      description:
+        "Record activities, meals, behavior, and more, all from your mobile device. Parents receive reports at day's end.",
+    },
+    {
+      image: "/assets/schedule.png",
+      title: "Easy Calendar Management",
+      description:
+        "Schedule vacations, events, and more, without the tech headache. Parents can view and mark their child's days.",
+    },
+    {
+      image: "/assets/comments.png",
+      title: "Real-Time Messaging",
+      description:
+        "Anytime Stay connected with parents through real-time messaging. Group chats, direct messages, and notifications - all at your fingertips.",
+    },
+    {
+      image: "/assets/share.png",
+      title: "Share Moments Seamlessly",
+      description:
+        "Post images and videos of activities. Parents get notified when their child is tagged - all from your trusty phone.",
+    },
+    {
+      image: "/assets/loudspeaker.png",
+      title: "Critical Announcements Made Simple",
+      description:
+        "Send announcements with ease - regular updates, acknowledgments, or emergencies. All from the device in your pocket.",
+    },
+    {
+      image: "/assets/delivery.png",
+      title: "Task Tracking, Effortless",
+      description:
+        "Create and track tasks for yourself, keeping you organized and on top of daycare operations.",
+    },
+    {
+      image: "/assets/bill.png",
+      title: "Hassle-Free Receipts",
+      description:
+        "Send payment receipts directly from your phone. No fuss, just a few taps.",
     },
   ],
 };
