@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 const Highlight = () => {
   return (
-    <section className="text-center bg-[#D9D9D933] py-[120px] mx-auto">
+    <section className="text-center bg-[#D9D9D933] pt-[120px] pb-44 mx-auto">
       <h3 className="text-5xl font-bold text-[#000B33]">
         Experience Effortless Childcare Management Today
       </h3>
