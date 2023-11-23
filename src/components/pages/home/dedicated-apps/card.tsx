@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 interface IAppCardProps {
@@ -71,18 +71,21 @@ const Card = ({ title, description, type }: IAppCardProps) => {
           </h3>
           <p className="leading-8">{description}</p>
         </div>
-        <Button
-          size="lg"
+        <Link
+          href={`/services/${type}`}
           className={cn(
             "mt-8 border border-transparent text-white",
+            buttonVariants({
+              variant: isHovered ? "default" : "outline",
+              size: "lg",
+            }),
             isHovered
               ? "border-transparent bg-[#FF8500] hover:bg-[#FBB821]"
               : "border-white bg-transparent"
           )}
-          variant={isHovered ? "default" : "outline"}
         >
           Read More
-        </Button>
+        </Link>
       </div>
     </div>
   );
