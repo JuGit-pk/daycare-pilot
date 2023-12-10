@@ -7,7 +7,7 @@ import Container from "../container";
 const Footer = () => {
   return (
     <footer className="bg-[#FBB821] pt-8 pb-11">
-      <Container className="flex justify-between items-start">
+      <Container className="flex flex-col items-center justify-center xl:flex-row xl:justify-between xl:items-start">
         <div>
           <Image
             src="/assets/daycarepilot2.png"
@@ -16,8 +16,8 @@ const Footer = () => {
             height={133}
           />
         </div>
-        <div className="pt-6 flex flex-col justify-between ml-28">
-          <ul className="space-x-16 font-extrabold text-[22px]  flex items-center justify-center text-[#25314C]">
+        <div className="py-12 xl:py-6 flex flex-col justify-between 2xl:ml-28">
+          <ul className="gap-x-14 xl:gap-x-16 font-extrabold text-lg 2xl:text-[22px] flex flex-wrap gap-y-4 items-center justify-center text-[#25314C]">
             {FOOTER_ITEMS.map(({ name, path }, i) => (
               <li key={path + i} className="inline-block">
                 <Link
@@ -29,12 +29,12 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-          <p className="mx-auto mt-14 text-[#25314C] text-base 2xl:text-lg font-sans">
+          <p className="hidden xl:block mx-auto mt-14 text-[#25314C] text-base 2xl:text-lg font-sans">
             Copyright to SIPPY CUP SOFTWARE INC.
           </p>
         </div>
-        <div className="pt-6 flex flex-col">
-          <div className="space-x-6 ml-auto">
+        <div className="flex flex-col items-center">
+          <div className="space-x-6 xl:ml-auto">
             {/* icons */}
             {FOOTER_SOCIAL_ITEMS.map(({ name, img, link }, i) => (
               <Link href={link} key={name + i} className="inline-block">
@@ -46,6 +46,9 @@ const Footer = () => {
             <Link href="/privacy-policy">Privacy Policy</Link>
             <Link href="/terms-and-conditions">Terms & Conditions</Link>
           </div>
+          <p className="xl:hidden mx-auto mt-7 text-[#25314C] text-base 2xl:text-lg font-sans">
+            Copyright to SIPPY CUP SOFTWARE INC.
+          </p>
         </div>
       </Container>
     </footer>

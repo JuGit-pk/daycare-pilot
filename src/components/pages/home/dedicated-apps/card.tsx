@@ -8,18 +8,20 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 interface IAppCardProps {
+  id: number;
   title: string;
   description: string;
   type: "parent" | "teacher";
 }
 
-const Card = ({ title, description, type }: IAppCardProps) => {
+const Card = ({ title, description, type, id }: IAppCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
       className={cn(
         "text-left py-28 px-9 transition-all duration-75 ease-in-out max-w-[582px] relative",
-        isHovered ? "text-[#262626]" : "text-[#FAFAFA]"
+        isHovered ? "text-[#262626]" : "text-[#FAFAFA]",
+        id % 2 === 0 ? "mr-auto" : "ml-auto"
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -66,7 +68,7 @@ const Card = ({ title, description, type }: IAppCardProps) => {
           </svg>
         )}
         <div className="max-w-[492px]">
-          <h3 className="text-xl font-bold py-6">
+          <h3 className="text-xl font-bold py-2 lg:py-6">
             <Link href={`/services/${type}`}>{title}</Link>
           </h3>
           <p className="leading-8">{description}</p>
@@ -74,7 +76,7 @@ const Card = ({ title, description, type }: IAppCardProps) => {
         <Link
           href={`/services/${type}`}
           className={cn(
-            "mt-8 border border-transparent text-white",
+            "mt-4 md:mt-8 border border-transparent text-white",
             buttonVariants({
               variant: isHovered ? "default" : "outline",
               size: "lg",

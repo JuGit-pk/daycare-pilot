@@ -9,7 +9,7 @@ const WavyWrapper = ({ children, className }: IProps) => {
   return (
     <section
       className={cn(
-        "bg-[#FF6600] text-center mx-auto pt-32 pb-36 text-[#FAFAFA] px-[152px] relative",
+        "bg-[#FF6600] text-center mx-auto pt-32 pb-36 text-[#FAFAFA] relative",
         className
       )}
     >

@@ -13,12 +13,12 @@ const Pricing = ({ className, isInverted = false }: IProps) => {
   return (
     <WrapperComponent
       className={cn(
-        `text-center py-48`,
+        `text-center`,
         isInverted ? "text-[#F9FAFB]" : "text-[#000B33]",
         className
       )}
     >
-      <Container className="space-y-5">
+      <Container className="space-y-5 py-24 lg:py-48">
         <p
           className={cn(
             " text-xl font-semibold",
@@ -27,7 +27,7 @@ const Pricing = ({ className, isInverted = false }: IProps) => {
         >
           Pricing Plan
         </p>
-        <h3 className="font-bold text-5xl">
+        <h3 className="font-bold text-[28px] lg:text-5xl">
           We have exclusive plan in
           <span className="block">our pricing</span>
         </h3>
@@ -35,7 +35,7 @@ const Pricing = ({ className, isInverted = false }: IProps) => {
           Vero homero perfecto mei ut, sonet aperiam an nec.mpus elit a laoreet
           volut pat.
         </p>
-        <div className="flex space-x-6 justify-center pt-20">
+        <div className="grid gap-6 xl:grid-cols-3 w-full pt-6 lg:pt-20 max-w-7xl mx-auto">
           {PRICING_CARDS.map((card, i) => (
             <Card key={card.title + i} isInverted={isInverted} {...card} />
           ))}

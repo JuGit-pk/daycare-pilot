@@ -15,7 +15,7 @@ const Card = ({ features, img, price, title, isInverted }: IProps) => {
   return (
     <div
       className={cn(
-        "group flex flex-col shadow-pricing group rounded-[40px] max-w-[416px] w-full justify-center items-center px-11 py-10 divide-y hover:shadow-none border-[3px] border-transparent transition-none text-[#000B33]",
+        "group mx-auto flex flex-col shadow-pricing group rounded-[40px] max-w-[416px] w-full justify-center items-center px-11 py-10 divide-y hover:shadow-none border-[3px] border-transparent transition-none text-[#000B33]",
         isInverted
           ? "hover:bg-[#F9FAFB] border-[#F9FAFB] text-[#F9FAFB] hover:text-[#000B33]"
           : "hover:border-[#FF6600]"

@@ -12,16 +12,16 @@ const Header = ({ children, className, isBear = true }: IProps) => {
   return (
     <header
       className={cn(
-        "bg-[#FBB821] pb-96 2xl:pb-[340px] pt-28 relative",
+        "bg-[#FBB821] pb-5 lg:pb-96 2xl:pb-[340px] pt-16 md:pt-28 relative",
         className
       )}
     >
-      <Container className="px-36 relative">
-        <Navbar className="mb-[88px]" />
+      <Container className="lg:px-36 relative">
+        <Navbar className="mb-20 md:mb-[88px]" />
         {/* relaavent position vector image */}
         <Image
           src="/assets/rocket.svg"
-          className="absolute top-28 right-16 z-10 h-32"
+          className="absolute top-28 right-16 z-10 h-32 hidden lg:block"
           alt="rocket"
           width={116}
           height={116}

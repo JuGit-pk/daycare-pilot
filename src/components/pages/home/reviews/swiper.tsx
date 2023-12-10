@@ -23,6 +23,20 @@ const ReviewsSwiper = () => {
         }}
         spaceBetween={26}
         slidesPerView={3}
+        breakpoints={{
+          1024: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          640: {
+            slidesPerView: 1,
+          },
+          320: {
+            slidesPerView: 1,
+          },
+        }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >

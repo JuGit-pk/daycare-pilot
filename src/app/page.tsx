@@ -13,7 +13,7 @@ import { HOME_PAGE_FEATURES } from "@/lib/constants";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen overflow-hidden">
       <Header isBear={false}>
         <CTA />
       </Header>
