@@ -10,7 +10,7 @@ const ContactUsPage = () => {
     <main className="min-h-screen">
       <Hero
         title="Contact Us"
-        description="An enim nullam tempor sapien gravida donec enim ipsum porta justo congue purus pretium ligula"
+        description="Here to Help, Because Your Daycare Deserves the Best"
         page="Contact"
       />
       <Container className={cn("flex gap-x-36 px-[152px] pb-32")}>
@@ -33,8 +33,9 @@ const ContactUsPage = () => {
                   alt="pin"
                 />
                 <span className="text-base">
-                  2118 Thornridge Cir. Syracuse,{" "}
-                  <span className="block">California 208434</span>
+                  2164 Montreal Road,{" "}
+                  <span className="block">Unit 5, Suite #8348</span>
+                  <span className="block">Ottawa, ON, Canada, K1J 1G4</span>
                 </span>
               </div>
             </div>
@@ -50,7 +51,7 @@ const ContactUsPage = () => {
                   height={20}
                   alt="phone"
                 />
-                <span>+088 (246) 642-27-10</span>
+                <span>1833-927-0176</span>
               </div>
               <div className="gap-x-4 flex items-start text-base mt-5">
                 <Image
@@ -60,7 +61,7 @@ const ContactUsPage = () => {
                   height={15}
                   alt="mail"
                 />
-                <span>info@gmail.com</span>
+                <span>contact@daycarepilot.com</span>
               </div>
             </div>
           </div>

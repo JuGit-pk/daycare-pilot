@@ -16,7 +16,7 @@ const Features: React.FC<IProps> = ({
 }) => {
   const { description, features, title } = feat;
   return (
-    <section className={cn(`text-[#000B33]  text-center relative`, className)}>
+    <section className={cn(`text-[#000B33] text-center relative`, className)}>
       {isAdditionalVectors && (
         <Image
           src="/assets/dots.svg"
@@ -31,7 +31,7 @@ const Features: React.FC<IProps> = ({
         <p className="max-w-lg mx-auto lg:max-w-none text-xl lg:text-2xl mt-7 opacity-80">
           {description}
         </p>
-        <div className="grid grid-cols-1 justify-center items-center lg:grid-cols-2 xl:grid-cols-4 gap-x-10 gap-y-24 mt-20">
+        <div className="grid grid-cols-1 justify-center lg:grid-cols-2 xl:grid-cols-4 gap-x-10 gap-y-24 mt-20">
           {features.map(({ description, title, image }) => (
             <div
               key={description}

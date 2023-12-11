@@ -61,39 +61,40 @@ export const FOOTER_SOCIAL_ITEMS = [
 
 export const PRICING_CARDS = [
   {
-    title: "Starter Plan",
+    title: "Basic Plan (Free)",
     price: "$5",
     img: "/assets/starter-plan.svg",
     features: [
-      "Lorem Ipsum",
-      "Lorem Ipsum",
-      "Lorem Ipsum",
-      "Lorem Ipsum",
-      "Lorem Ipsum",
-    ],
-  },
-  {
-    title: "Basic Plan",
-    price: "$45",
-    img: "/assets/basic-plan.svg",
-    features: [
-      "Lorem Ipsum",
-      "Lorem Ipsum",
-      "Lorem Ipsum",
-      "Lorem Ipsum",
-      "Lorem Ipsum",
+      "Upto 3 kids",
+      "Daily Reports",
+      "Announcements",
+      "Real time Chat",
+      "Limited customer Support",
     ],
   },
   {
     title: "Premium Plan",
+    price: "$45",
+    img: "/assets/basic-plan.svg",
+    features: [
+      "Upto 10 Kids",
+      "Daily Reports with detailed insights",
+      "Real-time messaging",
+      "Calendar management",
+      "Daily Feed",
+      "Priority customer support",
+    ],
+  },
+  {
+    title: "Enterprise Plan",
     price: "$120",
     img: "/assets/premium-plan.svg",
     features: [
-      "Lorem Ipsum",
-      "Lorem Ipsum",
-      "Lorem Ipsum",
-      "Lorem Ipsum",
-      "Lorem Ipsum",
+      "All Basic Plan features",
+      "Multiple Center Support",
+      "Compliance reports",
+      "Capacity Planning",
+      "Custom features on request",
     ],
   },
 ];
@@ -107,43 +108,43 @@ export const HOME_PAGE_FEATURES = {
       image: "/assets/check-in.png",
       title: "Intuitive Check-In/Check-Out",
       description:
-        "Effortlessly manage child attendance right from your phone. Parents request check-in/check-out, and you confirm with a tap.",
+        "Simplify child attendance management with our intuitive check-in/check-out system. Designed for busy parents and caregivers.",
     },
     {
       image: "/assets/seo-report.png",
       title: "Daily Reports, No Hassle",
       description:
-        "Record activities, meals, behavior, and more, all from your mobile device. Parents receive reports at day's end.",
+        "Effortlessly track and record children's activities, meals, behaviour, and more throughout the day. Share the reports with parents with one click and keep them informed and engaged in their child's daily experiences.",
     },
     {
       image: "/assets/schedule.png",
-      title: "Easy Calendar Management",
+      title: "Calendar Management",
       description:
-        "Schedule vacations, events, and more, without the tech headache. Parents can view and mark their child's days.",
+        "Organize your daycare's schedule with ease. Our calendar management tool allows you to plan activities, track important events, and manage holiday closures",
     },
     {
       image: "/assets/comments.png",
       title: "Real-Time Messaging",
       description:
-        "Anytime Stay connected with parents through real-time messaging. Group chats, direct messages, and notifications - all at your fingertips.",
+        "Stay connected with real-time messaging. Our secure platform enables direct communication between parents and caregivers. Whether it's a quick update, a question, or sharing a special moment, our messaging feature ensures you're always just a message away.",
     },
     {
       image: "/assets/share.png",
       title: "Share Moments Seamlessly",
       description:
-        "Post images and videos of activities. Parents get notified when their child is tagged - all from your trusty phone.",
+        "Capture and share precious moments instantly. Our app makes it easy to snap photos and videos of children's activities and milestones, sharing them securely with parents. Bring joy to parents by giving them a glimpse into their child's day-to-day adventures.",
     },
     {
       image: "/assets/loudspeaker.png",
-      title: "Critical Announcements Made Simple",
+      title: "Announcements Made Simple",
       description:
-        "Send announcements with ease - regular updates, acknowledgments, or emergencies. All from the device in your pocket.",
+        "Efficiently broadcast important updates or emergency alerts directly from your mobile device or even receive acknowledgements of communication from the intuitive app. Simplify your communication process, ensuring every vital message is delivered promptly and reliably.",
     },
     {
       image: "/assets/delivery.png",
-      title: "Task Tracking, Effortless",
+      title: "Streamlined Task Management",
       description:
-        "Create and track tasks for yourself, keeping you organized and on top of daycare operations.",
+        "CEasily set up and monitor tasks, ensuring you stay organized and in control of your daycare activities. Our intuitive system helps keep your daily operations running smoothly.",
     },
     {
       image: "/assets/bill.png",
@@ -243,66 +244,45 @@ export const SERVICE_TEACHER_PAGE_FEATURES = {
 export const CUSTOMERS_REVIEWS = [
   {
     avatar: "",
-    name: "Russell Gray",
+    name: "Sarah - Ottawa",
     description: "Dad of four girls",
     review:
-      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
+      "DaycarePilot has been a game-changer for my daycare. It's made attendance tracking and communication with parents a breeze. Highly recommended!",
   },
   {
     avatar: "",
-    name: "Janice Meyer",
+    name: "Pam - Winnipeg",
     description: "Mom of 2 boys",
     review:
-      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
+      "I can't imagine running my daycare without this software now. The daily reports and messaging features have improved parent-teacher communication immensely.",
   },
   {
     avatar: "",
-    name: "Annette Black",
-    description: "Mom of 2 boys",
+    name: "Jane",
+    description: "Under the sun Daycare",
     review:
-      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
+      "The calendar feature is a lifesaver! It helps me schedule vacations and events effortlessly. Parents love it too.",
   },
   {
     avatar: "",
-    name: "Russell Gray",
+    name: "Fauzia",
     description: "Dad of four girls",
     review:
-      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
+      "Real-time messaging has made my job so much easier. It's convenient, and I can keep parents updated instantly.",
   },
   {
     avatar: "",
-    name: "Janice Meyer",
+    name: "Rita",
     description: "Mom of 2 boys",
     review:
-      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
+      "I've tried other childcare software, but this one stands out. The announcements feature, especially during emergencies, is invaluable. It brings peace of mind.",
   },
   {
     avatar: "",
-    name: "Annette Black",
+    name: "Abiola",
     description: "Mom of 2 boys",
     review:
-      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
-  },
-  {
-    avatar: "",
-    name: "Russell Gray",
-    description: "Dad of four girls",
-    review:
-      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
-  },
-  {
-    avatar: "",
-    name: "Janice Meyer",
-    description: "Mom of 2 boys",
-    review:
-      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
-  },
-  {
-    avatar: "",
-    name: "Annette Black",
-    description: "Mom of 2 boys",
-    review:
-      "Aenean massa. Cum sociis sem Theme natoque penatibus et magnis dis et magnis dis amet parturient montes natoque.",
+      "The task tracking feature helps me stay organized and ensures I never miss important to-dos. It's efficient and user-friendly.",
   },
 ];
 
@@ -440,13 +420,13 @@ export const DEDICATED_APPS = [
   {
     title: "Parent App",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Engage in your child's day with real-time updates, easy communication, and essential insights, all at your fingertips. Embrace a stress-free approach to managing your child's daycare experience, where efficiency meets peace of mind.",
     type: "parent",
   },
   {
     title: "Teacher App",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Crafted to support providers, this app brings efficiency to your fingertips. Manage day to day activities and communicate updates with ease. Experience the convenience of streamlined task management and enhanced parent-teacher engagement, all through one intuitive platform. Transform your teaching approach with a tool that blends functionality with simplicity. Transform your teaching approach with a tool that blends functionality with simplicity.",
     type: "teacher",
   },
 ];

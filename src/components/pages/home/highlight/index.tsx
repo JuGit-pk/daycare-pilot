@@ -15,8 +15,8 @@ const Highlight = () => {
           Childcare Management Today
         </h3>
         <p className="max-w-md mx-auto lg:max-w-none mt-7 text-xl 2xl:text-2xl opacity-70">
-          Sign up for a 14-day trial. No credit card required. Try it on your
-          phone and see the difference.
+          Sign up for a 30-day trial. No credit card required. Witness the
+          transformative difference firsthand.
         </p>
         <Button
           size="lg"

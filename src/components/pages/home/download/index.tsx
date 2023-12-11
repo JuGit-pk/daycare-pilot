@@ -20,13 +20,13 @@ const Downlaod = () => {
         </div>
         <div className="max-w-[460px] text-center lg:text-left mx-auto lg:mx-0">
           <h3 className="text-4xl xl:text-5xl font-bold">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit
+            Transform Your Daycare Management Experience
           </h3>
           <p className="max-w-[416px] text-base mt-4 opacity-80">
-            Vero homero perfecto mei ut, sonet aperiam an nec. Ni nec dict
-            altera legimu. Me vita de lege ndos expet end is ad.mita aliu mi
-            ando, haeo tibi que com titure viset cut.Proin tempus elit a laoreet
-            volut pat.
+            Discover the ease and efficiency of managing your daycare with our
+            innovative app. Designed for both small and large daycare providers,
+            our app offers intuitive features that streamline daily tasks and
+            enhance communication with parents.
           </p>
           <div className="flex space-x-4 mt-14 shrink-0">
             <Image
