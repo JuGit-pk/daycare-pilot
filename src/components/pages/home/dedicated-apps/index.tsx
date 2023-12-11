@@ -5,8 +5,8 @@ import { DEDICATED_APPS } from "@/lib/constants";
 
 const DedicatedApps = () => {
   return (
-    <WavyWrapper>
-      <Container className="2xl:px-[152px]">
+    <WavyWrapper className="py-16 lg:pt-32 lg:pb-36">
+      <Container className="py 2xl:px-[152px]">
         <div>
           <h3 className="text-3xl lg:text-[50px] font-bold">
             Dedicated App for Parents & Teachers
@@ -16,7 +16,7 @@ const DedicatedApps = () => {
           </p>
         </div>
         {/* cards */}
-        <div className="grid gap-20 xl:grid-cols-2 pt-10 sm:pt-20">
+        <div className="grid gap-2 sm:gap-10 lg:gap-20 xl:grid-cols-2 pt-10 sm:pt-20">
           {DEDICATED_APPS.map((app, i) => (
             <Card
               id={i + 1}

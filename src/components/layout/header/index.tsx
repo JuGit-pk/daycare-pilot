@@ -12,7 +12,7 @@ const Header = ({ children, className, isBear = true }: IProps) => {
   return (
     <header
       className={cn(
-        "bg-[#FBB821] pb-5 lg:pb-96 2xl:pb-[340px] pt-16 md:pt-28 relative",
+        "bg-[#FBB821] pb-5 lg:pb-72 xl:pb-96 2xl:pb-[340px] pt-16 md:pt-28 relative",
         className
       )}
     >

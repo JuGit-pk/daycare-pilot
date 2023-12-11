@@ -19,9 +19,9 @@ const Card = ({ title, description, type, id }: IAppCardProps) => {
   return (
     <div
       className={cn(
-        "text-left py-28 px-9 transition-all duration-75 ease-in-out max-w-[582px] relative",
+        "text-left py-28 px-9 transition-all duration-75 ease-in-out max-w-[582px] relative mx-auto xl:mx-0",
         isHovered ? "text-[#262626]" : "text-[#FAFAFA]",
-        id % 2 === 0 ? "mr-auto" : "ml-auto"
+        id % 2 === 0 ? "xl:mr-auto" : "xl:ml-auto"
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

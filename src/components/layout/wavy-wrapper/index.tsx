@@ -18,7 +18,7 @@ const WavyWrapper = ({ children, className }: IProps) => {
         width={5000}
         height={5000}
         alt="bg"
-        className="absolute top-1 inset-x-0 -translate-y-full"
+        className="absolute top-0.5 md:top-1 inset-x-0 -translate-y-full"
       />
       {children}
       {/* bottom */}
@@ -27,7 +27,7 @@ const WavyWrapper = ({ children, className }: IProps) => {
         width={5000}
         height={5000}
         alt="bg"
-        className="absolute bottom-1 inset-x-0 translate-y-full"
+        className="absolute bottom-0.5 md:bottom-1 inset-x-0 translate-y-full"
       />
     </section>
   );

@@ -4,7 +4,7 @@ import Swiper from "./swiper";
 
 const Reviews = () => {
   return (
-    <section className="py-20 lg:pt-36 lg:pb-20">
+    <section className="py-20 lg:pt-36 lg:pb-20 xl:pt-72 xl:pb-28">
       <Container className="text-center text-[#171717]">
         <div className="max-w-[750px] flex flex-col items-center mx-auto">
           <h3 className="text-4xl lg:text-[55.5px] font-extrabold">
