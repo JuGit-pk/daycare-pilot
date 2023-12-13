@@ -1,10 +1,58 @@
+"use client";
 import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
+import * as z from "zod";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormMessage,
+} from "@/components/ui/form";
+
+const formSchema = z.object({
+  email: z.string().email(),
+});
 
 const CTA = () => {
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      email: "",
+    },
+  });
+  const saveEmail = async (email: string) => {
+    try {
+      const res = await fetch("/api/email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+        }),
+      });
+      if (res.status === 400) {
+        throw new Error("Email already exists");
+      }
+      if (res.status === 200) {
+        console.log("Email saved");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    if (values.email) await saveEmail(values.email);
+    form.reset();
+  }
+
   return (
     <section className="grid grid-col-1 lg:grid-cols-12 text-background">
       <div className="lg:col-span-6 flex flex-col justify-center items-center lg:block">
@@ -15,26 +63,45 @@ const CTA = () => {
           Because Your Passion Dose&apos;nt
           <span className="lg:block"> Clock Out</span>
         </p>
-        <div className="relative mt-7 md:mt-9 w-full lg:w-auto sm:max-w-[500px]">
-          <Image
-            src="/assets/envelope.svg"
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 w-6 h-6"
-            width={100}
-            height={100}
-            alt="envelop"
-          />
-          <Input
-            type="text"
-            placeholder="Email ... "
-            className="pl-12 text-[#000B33] text-base font-medium py-6 w-full lg:max-w-[442px] placeholder:text-[#25314C5C]"
-          />
-        </div>
-        <Button
-          size="lg"
-          className={cn("bg-[#25314C] mt-5 py-7 text-base px-10 font-medium")}
-        >
-          Get Started
-        </Button>
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)}>
+            <div className="relative mt-7 md:mt-9 w-full lg:w-auto sm:max-w-[500px]">
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem className="relative mt-7 md:mt-9 w-full lg:w-auto sm:max-w-[500px]">
+                    <FormControl>
+                      <div className="relative">
+                        <Input
+                          placeholder="Email ... "
+                          {...field}
+                          className="pl-12 text-[#000B33] text-base font-medium py-6 w-full lg:max-w-[442px] placeholder:text-[#25314C5C]"
+                        />
+                        <Image
+                          src="/assets/envelope.svg"
+                          className="absolute left-4 top-1/2 transform -translate-y-1/2 w-6 h-6"
+                          width={100}
+                          height={100}
+                          alt="envelope"
+                        />
+                      </div>
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
+            <Button
+              size="lg"
+              className={cn(
+                "bg-[#25314C] mt-5 py-7 text-base px-10 font-medium"
+              )}
+            >
+              Get Started
+            </Button>
+          </form>
+        </Form>
         <p className="text-xs font-bold mt-2.5 mb-5 2xl:mb-0">
           *Start a 3- day trial no credit card required
         </p>
