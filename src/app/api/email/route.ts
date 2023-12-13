@@ -14,10 +14,8 @@ export const POST = async (request: any) => {
 
   try {
     await newEmail.save();
-    return new NextResponse("user is registered", { status: 200 });
+    return new NextResponse("email is subscribed", { status: 200 });
   } catch (err: any) {
-    return new NextResponse(err, {
-      status: 500,
-    });
+    return err.message;
   }
 };
