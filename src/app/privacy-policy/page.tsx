@@ -12,7 +12,7 @@ const PrivacyPolicyPage = () => {
         description="An enim nullam tempor sapien gravida donec enim ipsum porta justo congue purus pretium ligula"
         page="Privacy Policy"
       />
-      <Container className="space-y-10 px-40 text-[26px] pb-20 opacity-80 relative">
+      <Container className="space-y-10 px-6 lg:px-40 text-[26px] pb-20 opacity-80 relative">
         <Image
           className="absolute bottom-[10%] left-0"
           src="/assets/horizon.png"
@@ -21,7 +21,7 @@ const PrivacyPolicyPage = () => {
           alt="horizon image"
         />
         {PRIVACY_POLICY.map((pp, i) => (
-          <p className="text-[#000B33]" key={i}>
+          <p className="text-[#000B33] opacity-80" key={i}>
             {pp}
           </p>
         ))}

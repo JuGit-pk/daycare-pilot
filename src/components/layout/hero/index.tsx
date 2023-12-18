@@ -9,9 +9,11 @@ interface IProps {
 }
 const Hero = ({ description, page, title }: IProps) => {
   return (
-    <Header className="text-center text-white">
-      <h1 className="text-7xl font-bold  pt-20">{title}</h1>
-      <p className="max-w-[400px] inline-block mt-5 mb-10 text-base opacity-80">
+    <Header className="text-center text-white pb-40">
+      <h1 className="text-[42px] xl:text-7xl font-bold pt-0 md:pt-20">
+        {title}
+      </h1>
+      <p className="max-w-[400px] inline-block mt-5 mb-10 text-base opacity-80 font-semibold lg:font-normal">
         {description}
       </p>
       {/* create breadcrump  of Home > Services */}

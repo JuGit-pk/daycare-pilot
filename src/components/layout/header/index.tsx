@@ -29,7 +29,7 @@ const Header = ({ children, className, isBear = true }: IProps) => {
         {isBear && (
           <Image
             src="/assets/bear.svg"
-            className="absolute top-72 2xl:top-60 left-10 z-10 h-32"
+            className="absolute top-[330px] md:top-[420px] lg:top-72 2xl:top-60 left-[40%] md:left-[45%] lg:left-10 z-10 h-16 lg:h-32"
             alt="bear"
             width={150}
             height={300}
