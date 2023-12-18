@@ -13,8 +13,12 @@ const ContactUsPage = () => {
         description="Here to Help, Because Your Daycare Deserves the Best"
         page="Contact"
       />
-      <Container className={cn("flex gap-x-36 px-[152px] pb-32")}>
-        <div className="max-w-[416px] shadow-accordion rounded-md w-full">
+      <Container
+        className={cn(
+          "flex flex-col lg:flex-row lg:gap-x-10 xl:gap-x-36 lg:px-[152px] pb-14 lg:pb-32"
+        )}
+      >
+        <div className="lg:max-w-[416px] shadow-accordion rounded-md w-full">
           <p>&nbsp;</p>
           <h3 className="text-[30px] font-bold text-white w-full bg-[#FF6600] flex items-center px-8 py-6 rounded-tl-md rounded-tr-md">
             Contact Details
@@ -70,10 +74,10 @@ const ContactUsPage = () => {
           <ContactUsForm />
         </div>
       </Container>
-      <div className="w-full">
+      <div className="w-full h-[550px] lg:h-auto">
         <Image
           src="/assets/our-location.png"
-          className="w-full object-cover"
+          className="w-full object-cover lg:object-cover h-full"
           width={1600}
           height={550}
           alt="our location"
