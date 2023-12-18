@@ -23,7 +23,7 @@ const Features: React.FC<IProps> = ({
           width={70}
           height={180}
           alt="bg"
-          className="absolute top-12 right-3"
+          className="hidden md:block absolute top-12 right-3"
         />
       )}
       <Container className="text-center py-20 lg:py-36 lg:px-[152px]">

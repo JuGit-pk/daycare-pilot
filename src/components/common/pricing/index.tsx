@@ -18,7 +18,9 @@ const Pricing = ({ className, isInverted = false }: IProps) => {
         className
       )}
     >
-      <Container className="space-y-5 pt-24 pb-72 lg:pt-48">
+      <Container
+        className={cn(`space-y-5`, !isInverted && "pt-24 pb-72 lg:pt-48")}
+      >
         <p
           className={cn(
             " text-xl font-semibold",
