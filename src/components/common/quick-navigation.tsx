@@ -16,10 +16,10 @@ interface IProps {
 const QuickNavigation = ({ tabs }: IProps) => {
   return (
     <Tabs defaultValue={tabs[0].slug}>
-      <Container className="px-[152px] flex gap-x-32 justify-center items-start pb-36">
-        <div className="max-w-[306px]">
+      <Container className="2xl:px-[152px] flex flex-col lg:flex-row gap-x-20 xl:gap-x-32 justify-center pb-36 items-stretch">
+        <div className="mb-10 lg:mb-0 lg:max-w-[306px] w-full h-auto">
           <p>&nbsp;</p>
-          <h3 className="text-[30px] font-bold text-white bg-[#FF6600] inline-block px-8 py-6 mb-8 rounded-tl-md rounded-tr-md">
+          <h3 className="text-[30px] font-bold text-white bg-[#FF6600] block lg:inline-block px-8 py-6 mb-8 rounded-tl-md rounded-tr-md">
             Quick Navigation
           </h3>
           <TabsList
