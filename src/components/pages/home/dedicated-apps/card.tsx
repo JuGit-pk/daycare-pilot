@@ -19,21 +19,15 @@ const Card = ({ title, description, type, id }: IAppCardProps) => {
   return (
     <div
       className={cn(
-        "text-left py-28 px-9 transition-all duration-75 ease-in-out max-w-[582px] relative mx-auto xl:mx-0",
-        isHovered ? "text-[#262626]" : "text-[#FAFAFA]",
+        "text-left py-7 lg:py-28 px-9 transition-all duration-75 ease-in-out max-w-[582px] relative mx-auto xl:mx-0 -skew-y-6 border-4 border-white rounded-3xl",
+        isHovered ? "text-[#262626] bg-white" : "text-[#FAFAFA] bg-transparent",
         id % 2 === 0 ? "xl:mr-auto" : "xl:ml-auto"
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/*  background image of the card using the next js image component for better optimization */}
-      {isHovered ? (
-        <Image src="/assets/blob.svg" fill alt="bg" className="z-0" />
-      ) : (
-        <Image src="/assets/blob-outline.svg" fill alt="bg" className="z-0" />
-      )}
       {/* icon for each app card */}
-      <div className="z-10 relative">
+      <div className="z-10 relative skew-y-6">
         {type === "parent" ? (
           <svg
             width="72"

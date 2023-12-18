@@ -64,13 +64,16 @@ const CTA = () => {
           <span className="lg:block"> Clock Out</span>
         </p>
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)}>
-            <div className="relative mt-7 md:mt-9 w-full lg:w-auto sm:max-w-[500px]">
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="w-full flex flex-col items-center lg:items-start"
+          >
+            <div className="relative mt-7 md:mt-9 w-full sm:max-w-[500px]">
               <FormField
                 control={form.control}
                 name="email"
                 render={({ field }) => (
-                  <FormItem className="relative mt-7 md:mt-9 w-full lg:w-auto sm:max-w-[500px]">
+                  <FormItem className="relative mt-7 md:mt-9 w-full sm:max-w-[500px] lg:flex-1">
                     <FormControl>
                       <div className="relative">
                         <Input
